@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --redj: #AA0000;
+    --blå: rgb(13, 48, 148); 
+}
+body {
+    font-size: 10px;
+    font-family: 'Roboto' , sans-serif;
+    min-height: 100vh;
+   
+    text-align: center;
+    width: 100vw;
+    
+
+}
+body, html {
+  scroll-padding-top: 180px;
+  scroll-behavior: smooth;
+}
+header {
+  position:fixed;
+  
+  width: 100%;
+  height: 18%;
+  background-color:#aa0000d5 ;
+  z-index: 9999; 
+
+
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0px;
+  width: 100%;
+  position: relative;
+ 
+  
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  
+  
+  max-width: 1000px;
+
+}
+
+.menupunkter{
+  display: inline-block;
+  margin: 0;
+}
+.menupunkter a{
+  
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+.menupunkter:hover > a{
+  background-color: none;
+  color: var(--blå);
+}
+
+.menupunkter  img {
+  position: relative;
+  width: 90%;
+
+  
+}
+.menupunkter a {
+  display: block;
+  width: 180px;
+  
+}
+.navbar ul > * {
+  
+}
+.køb  {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 150px;
+  
+   
+}
+.køb a {
+  color: white;
+  background-color:var(--blå);
+  border-radius: 15px;
+  padding: 0px;
+  padding-right: 13px;
+  padding-left: 13px;
+
+  text-decoration: none;
+  font-size: 2rem;
+}
+.køb:hover > a {
+  background-color: white;
+  color: var(--blå);
+
+}
+
+
+
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+  }
+#hero img {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+#konku img {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+#overskrift {
+    width: fit-content;
+    margin: 0 auto;
+    transform: rotateZ(-6deg);
+    border: 20px solid white;
+    outline: 3px solid black;
+    border-radius: 3px;
+    
+}
+#overskrift h1 {
+    font-size: 4rem;
+    color: white;
+    background-color: var(--redj);
+    width: fit-content;
+    padding: 20px;
+    outline: 3px solid black;
+    border-radius: 3px;
+}
+#tlf {
+    margin-top: 30px;
+    position: relative;
+}
+#tlf input {
+    width: 215px;
+    height: 35px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+#tlf input[placeholder] {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#tlf1 {
+    position: absolute;
+    left: 27%;
+    top: 60%;
+    display: flex;
+    align-items: center;
+}
+#tlf1 a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: var(--redj);
+    color: white;
+    background-color: var(--redj);
+    width: fit-content;
+    padding: 2px;
+    outline: 3px solid black;
+    border-radius: 7px;
+    
+}
+#jollyoverskrift {
+    width: fit-content;
+    margin: 0 auto;
+    transform: rotateZ(-6deg);
+    border: 20px solid white;
+    outline: 3px solid black;
+    border-radius: 3px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+#jollyoverskrift h1 {
+    font-size: 4rem;
+    color: white;
+    background-color: var(--redj);
+    width: fit-content;
+    padding: 20px;
+    outline: 3px solid black;
+    border-radius: 3px;
+    }
+    
+      article {
+        margin-left: 10vw;
+        margin-right: 10vw;
+      
+        display: flex;
+        justify-content: space-between;
+      }
+      .tekst {
+        width: 50%;
+        background-color: var(--redj);
+        border-radius: 5px;
+        border: 2px solid black;
+        margin-top: 19px;
+        
+        
+        
+      }
+      .tekst p {
+        color: white;
+        text-align:start;
+        padding: 35px;
+        font-size: 1.4rem;
+        
+        
+      }
+      #læsmere  {
+       position: relative;
+       text-align: center;
+      } 
+
+      #læsmere img {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }
+      #læsmere a {
+        position: absolute;
+        bottom: 8px;
+        left: 44%;
+        transform: translate(-50% -50%);
+        
+          font-size: 2rem;
+          text-decoration: none;
+          color: white;
+          background-color: var(--redj);
+          padding-left: 15px;
+          padding-right: 15px;
+          border-radius: 7px;
+          outline: 2px solid white;
+      }
+      #læsmere:hover > a {
+        background-color:var(--redj);
+        color: var(--blå);
+      }
+
+
+
+
+
+
+
+
+
+    .højre {
+        width: 50%;
+        margin-top: 20px;
+        margin-right: 5%;
+      }
+      .højre img {
+        width: 100%;
+        margin-left: 100px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+        border: 2px solid black;
+        color: white;
+      }
+
+
+
+
+
+      #produkter {
+        width: fit-content;
+        margin: 0 auto;
+        transform: rotateZ(-6deg);
+        border: 20px solid white;
+        outline: 3px solid black;
+        border-radius: 3px;
+        margin-top: 140px;
+        margin-bottom: 100px;
+        
+    }
+    #produkter h1 {
+        font-size: 4rem;
+        color: white;
+        background-color: var(--redj);
+        width: fit-content;
+        padding: 20px;
+        outline: 3px solid black;
+        border-radius: 3px;
+        }
+
+
+        /**********footer starter her**********/
+        footer {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            margin-top: 100px;
+            background-color: var(--redj);
+            font-size: 1rem;
+        }
+        footer hr {
+          border: 1px solid white;
+          margin: 0;
+        }
+        .adresse {
+          margin-top: 15px;
+        }
+        .kontakt {
+            margin-top: 15px;
+            margin-left: 10%;;
+        }
+        .følg {
+            margin-right: 10%;
+            margin-top: 15px;
+            
+        }
+        .følg img {
+          width: 150px;
+          margin-right: 34px;
+        }
+
+
+        
+        
+
+
+
+        @media screen and (max-width: 975px) {
+          
+          .køb {
+            display: none;
+          }
+        .menupunkter {
+          display: none;
+        }
+
+        }
+          .menupunkter img {
+            position: relative;
+            width: 90%;
+          }
+          
+          @media screen and (min-width: 750px) {
+            #hero2 img {
+              display: none;
+            }
+            #konku1 {
+              display: none;
+            }
+            #billed1 {
+              display: none;
+            }
+          }
+         
+          @media screen and (max-width: 750px) {
+            .køb {
+              display: none;
+            }
+            #hero img {
+              display: none;
+            }
+            #hero2 img {
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              
+            }
+            #hero2 {
+              position: relative;
+              
+            }
+            #hero2::after {
+              
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              content: "";
+              background: linear-gradient(rgba(0, 0, 0, 0)60%,white);
+            }
+           header {
+             height: 10%;
+           }
+           #konk {
+             display: none;
+           }
+           #konku1 {
+             width: 100%;
+             margin: 0;
+             padding: 0;
+           }
+           #overskrift h1 {
+             font-size: 2.5rem;
+           }
+           #tlf1 {
+             top: 35%;
+             
+             
+           }
+           #tlf input {
+             width: 160px;
+             border: 2px solid black; 
+           }
+           #tlf input[placeholder] {
+             font-size: 1.2rem;
+           }
+           #jollyoverskrift h1 {
+             font-size: 2.2rem;
+           }
+           .højre {
+             display: none;
+           }
+           .tekst {
+            width: 100%;
+           }
+           .tekst p {
+             padding: 15px; 
+           }
+           #billed1 {
+             width: 100%;
+             border: 1px solid white;
+             border-radius: 3px;
+           }
+           #produkter {
+             margin-top: 110px;
+           }
+           #produkter h1 {
+             font-size: 2.9rem;
+           }
+           #læsmere a {
+             left: 39%;
+             font-size: 1rem;
+             outline: 1px solid white;
+           }
+           #læsmere img {
+             height: 170px;
+           }
+           footer {
+             width: 100%;
+           }
+          }
+
+
+
+
+
+
+   
+    
