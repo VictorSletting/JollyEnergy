@@ -24,10 +24,9 @@ body, html {
 }
 header {
   position:fixed;
-  
   width: 100%;
   height: 18%;
-  background-color:#aa0000d5 ;
+  background-color:#aa0000ea;
   z-index: 9999; 
 
 
@@ -126,8 +125,20 @@ main {
     width: 100vw;
     margin: 0;
     padding: 0;
-
 }
+#hero::after {
+              
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0)60%,white);
+}
+
+
+
 #konku img {
     width: 100vw;
     margin: 0;
@@ -309,6 +320,43 @@ main {
         outline: 3px solid black;
         border-radius: 3px;
         }
+        #sælg {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 60px;
+          
+         
+        }
+        
+        #sælg h1 {
+          
+          font-size: 2rem;
+          color: black
+        }
+       #sælg hr {
+         width: 400px;
+         border: 1px solid black;
+       }
+       #sælg1 {
+         display: flex;
+         justify-content: space-around;
+         flex-direction: row;
+         flex-wrap: wrap;
+         
+         margin: 60px;
+         
+         
+        
+         
+         
+       }
+       #sælg1 img {
+         margin: 45px;
+         height: 115px;
+       
+       }
 
 
         /**********footer starter her**********/
@@ -319,7 +367,7 @@ main {
             width: 100vw;
             margin: 0;
             padding: 0;
-            margin-top: 100px;
+            margin-top: 80px;
             background-color: var(--redj);
             font-size: 1rem;
         }
@@ -329,10 +377,17 @@ main {
         }
         .adresse {
           margin-top: 15px;
+          
+        }
+        .adresse p {
+          padding: 5px;
         }
         .kontakt {
             margin-top: 15px;
             margin-left: 10%;;
+        }
+        .kontakt p {
+          padding: 5px;
         }
         .følg {
             margin-right: 10%;
@@ -340,7 +395,7 @@ main {
             
         }
         .følg img {
-          width: 150px;
+          width: 180px;
           margin-right: 34px;
         }
 
@@ -358,14 +413,42 @@ main {
         .menupunkter {
           display: none;
         }
+        .navbarmobil {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+          width: 100%;
 
         }
-          .menupunkter img {
-            position: relative;
-            width: 90%;
-          }
+        .navbarmobil img {
+          position: relative;
+          width: 60%;
+        }
+        .burger1 {
+          position: absolute;
+          margin-left: 75%;
+          margin-top: 20px;
+          width: 50%;
+        }
           
+        }
+        @media screen and (min-width: 976px) {
+          .navbarmobil {
+            display: none;
+          }
+        }
+        
+        
+          
+          
+
+           
+           
           @media screen and (min-width: 750px) {
+            .navbarmobil img {
+              width: 60%;
+            }
             #hero2 img {
               display: none;
             }
@@ -375,9 +458,42 @@ main {
             #billed1 {
               display: none;
             }
+            .burger1 img {
+              width: 15%;
+              margin-top: 40px;
+            }
+            header {
+              height: 160px;
+            }
+
+            
+
+            
           }
+          
+          
          
-          @media screen and (max-width: 750px) {
+          @media screen and (max-width: 749px) {
+            .navbar {
+              display: none;
+            }
+            .navbarmobil {
+              display: flex;
+              justify-content: center;
+              padding: 0;
+              margin: 0;
+              width: 100%;
+            }
+            .logo1 img {
+              position: relative;
+              width: 60%;
+              
+            }
+            .burger1 img {
+              position: relative;
+              width: 25%;
+              margin-top: 30px;
+            }
             .køb {
               display: none;
             }
@@ -405,7 +521,7 @@ main {
               background: linear-gradient(rgba(0, 0, 0, 0)60%,white);
             }
            header {
-             height: 10%;
+             height: 25%;
            }
            #konk {
              display: none;
@@ -454,19 +570,225 @@ main {
              font-size: 2.9rem;
            }
            #læsmere a {
-             left: 39%;
-             font-size: 1rem;
+             left: 31%;
+             font-size: 1.7rem;
              outline: 1px solid white;
            }
            #læsmere img {
-             height: 170px;
+             height: 230px;
            }
            footer {
+             display: flex;
+             flex-direction: column;
              width: 100%;
+           }
+           footer hr {
+             width: 100%;
+           }
+           .kontakt {
+             margin-top: 40px;
+             margin-left: 0%;
+             margin-right: 0%;
+           }
+           .adresse {
+            margin-left: 0%;
+            margin-right: 0%;
+           }
+           .følg {
+            margin-left: 0%;
+            margin-right: 0%;
+           
+           }
+           .kontakt p {
+             margin-top: 10px;
+             padding: 5px;
+           }
+           .adresse p {
+             margin-top: 10px;
+             padding: 5px; 
+           }
+           .følg img {
+           
+            width: 220px;
+
            }
           }
 
+          @media screen and (max-width: 600px) {
+            header {
+              height: 160px;
+            }
+            .logo1 img {
+              
+              width: 60%;
 
+            }
+            .burger1 img {
+              margin-top: 40px;
+              width: 20%;
+            }
+            #menupunktermobil {
+              font-size: 1.8rem;
+              
+              position: absolute;
+              display: none;
+              height: 85vw;
+              right: 0;
+              width: 100vw;
+              top: 108px;
+              background-color: #aa0000ea;
+            }
+            #menupunktermobil ul {
+              margin-left: 10px;
+              margin-top: 20px;
+              list-style-type: none;
+              
+              
+            }
+            #menupunktermobil li {
+              margin: 30px;
+            }
+            #menupunktermobil a {
+              
+              text-decoration: none;
+              color: white;
+            }
+            .burger1:hover #menupunktermobil {
+              display: block;
+            }
+            .burger1:hover {
+              width: 100%;
+            }
+            .burger1 {
+              position: relative;
+              margin-left: auto;
+              width: fit-content;
+            }
+            .logo1 {
+              z-index: 99999;
+            }
+            
+          }
+          @media screen and (max-width: 480px) {
+            header {
+              height: 130px;
+            }
+            .burger1 img {
+              margin-top: 30px;
+              width: 30%;
+            }
+            .logo1 img {
+              width: 130px;
+              margin-left: 140px;
+          }
+          #sælg h1 {
+            font-size: 1.7rem;
+          }
+          #sælg hr {
+            width: 320px;
+
+          }
+          #menupunktermobil {
+            font-size: 1.8rem;
+            
+            position: absolute;
+            display: none;
+            height: 85vw;
+            right: 0;
+            width: 100vw;
+            top: 108px;
+            background-color: #aa0000ea;
+          }
+          #menupunktermobil ul {
+            margin-left: 10px;
+            margin-top: 20px;
+            list-style-type: none;
+            
+            
+          }
+          #menupunktermobil li {
+            margin: 30px;
+          }
+          #menupunktermobil a {
+            
+            text-decoration: none;
+            color: white;
+          }
+          .burger1:hover #menupunktermobil {
+            display: block;
+          }
+          .burger1:hover {
+            width: 100%;
+          }
+          .burger1 {
+            position: relative;
+            margin-left: auto;
+            width: fit-content;
+          }
+          .logo1 {
+            z-index: 99999;
+          }
+        }
+          @media screen and (max-width: 390px) {
+            header {
+              height: 105px;
+            }
+            .logo1 img {
+              width: 110px;
+              margin-left: 110px;
+            }
+            .burger1 img {
+             
+              margin-top: 30px;
+            }
+            #sælg h1 {
+              font-size: 1.7rem;
+            }
+            #sælg hr {
+              width: 320px;
+
+            }
+            #menupunktermobil {
+              font-size: 1.5rem;
+              
+              position: absolute;
+              display: none;
+              height: 100vw;
+              right: 0;
+              width: 100vw;
+              top: 85px;
+              background-color: #aa0000ea;
+            }
+            #menupunktermobil ul {
+              margin-left: 10px;
+              margin-top: 20px;
+              list-style-type: none;
+              
+              
+            }
+            #menupunktermobil li {
+              margin: 30px;
+            }
+            #menupunktermobil a {
+              
+              text-decoration: none;
+              color: white;
+            }
+            .burger1:hover #menupunktermobil {
+              display: block;
+            }
+            .burger1:hover {
+              width: 100%;
+            }
+            .burger1 {
+              position: relative;
+              margin-left: auto;
+              width: fit-content;
+            }
+            .logo1 {
+              z-index: 99999;
+            }
+          }
 
 
 
