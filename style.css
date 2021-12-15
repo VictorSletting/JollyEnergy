@@ -415,21 +415,66 @@ main {
         }
         .navbarmobil {
           display: flex;
-          justify-content: center;
+          justify-content: space-around;
           padding: 0;
           margin: 0;
-          width: 100%;
+          width: 50vw;
 
         }
-        .navbarmobil img {
+         .navbarmobil img {
           position: relative;
-          width: 60%;
-        }
+          width: 50px;
+          margin-left: 200px;
+        } 
+       
+        
         .burger1 {
           position: absolute;
-          margin-left: 75%;
+          margin-left: 100px;
           margin-top: 20px;
           width: 50%;
+        }
+          
+        
+        #menupunktermobil {
+          font-size: 1.8rem;
+          
+          position: absolute;
+          display: none;
+          height: 85vw;
+          right: 0;
+          width: 100vw;
+          top: 85px;
+          background-color: #aa0000ea;
+        }
+        #menupunktermobil ul {
+          margin-left: 10px;
+          margin-top: 20px;
+          list-style-type: none;
+          
+          
+        }
+        #menupunktermobil li {
+          margin: 30px;
+        }
+        #menupunktermobil a {
+          
+          text-decoration: none;
+          color: white;
+        }
+        .burger1:hover #menupunktermobil {
+          display: block;
+        }
+        .burger1:hover {
+          width: 100%;
+        }
+        .burger1 {
+          position: relative;
+          margin-left: auto;
+          width: fit-content;
+        }
+        .logo1 {
+          z-index: 99999;
         }
           
         }
@@ -477,6 +522,7 @@ main {
             .navbar {
               display: none;
             }
+            
             .navbarmobil {
               display: flex;
               justify-content: center;
@@ -558,7 +604,7 @@ main {
            .tekst p {
              padding: 15px; 
            }
-           #billed1 {
+           .billed1 {
              width: 100%;
              border: 1px solid white;
              border-radius: 3px;
@@ -612,21 +658,73 @@ main {
             width: 220px;
 
            }
+           #menupunktermobil {
+            font-size: 1.8rem;
+            
+            position: absolute;
+            display: none;
+            height: 85vw;
+            right: 0;
+            width: 100vw;
+            top: 85px;
+            background-color: #aa0000ea;
           }
-
-          @media screen and (max-width: 600px) {
-            header {
-              height: 160px;
+          #menupunktermobil ul {
+            margin-left: 10px;
+            margin-top: 20px;
+            list-style-type: none;
+            
+            
+          }
+          #menupunktermobil li {
+            margin: 30px;
+          }
+          #menupunktermobil a {
+            
+            text-decoration: none;
+            color: white;
+          }
+          .burger1:hover #menupunktermobil {
+            display: block;
+          }
+          .burger1:hover {
+            width: 100%;
+          }
+          .burger1 {
+            position: relative;
+            margin-left: auto;
+            width: fit-content;
+          }
+          .logo1 {
+            z-index: 99999;
+          }
+          }
+          @media screen and (max-width: 850px) {
+            .navbarmobil {
+              display: flex;
+              justify-content: center;
+              padding: 0;
+              margin: 0;
+              width: 550px;
+              margin-left: 200px;
+    
             }
-            .logo1 img {
+            /* .navbarmobil img {
+              position: relative;
+              width: 80%;
+              margin-left: 300px;
+            } */
+            #logo1 img {
               
-              width: 60%;
-
+              
             }
-            .burger1 img {
-              margin-top: 40px;
-              width: 20%;
-            }
+             .burger1 {
+              position: absolute;
+              margin-left: 20px;
+              margin-top: 20px;
+              
+            } 
+            
             #menupunktermobil {
               font-size: 1.8rem;
               
@@ -635,7 +733,126 @@ main {
               height: 85vw;
               right: 0;
               width: 100vw;
-              top: 108px;
+              top: 85px;
+              background-color: #aa0000ea;
+            }
+            #menupunktermobil ul {
+              margin-left: 10px;
+              margin-top: 20px;
+              list-style-type: none;
+              
+              
+            }
+            #menupunktermobil li {
+              margin: 30px;
+            }
+            #menupunktermobil a {
+              
+              text-decoration: none;
+              color: white;
+            }
+            .burger1:hover #menupunktermobil {
+              display: block;
+            }
+            .burger1:hover {
+              width: 100%;
+            }
+            .burger1 {
+              position: relative;
+              margin-left: auto;
+              width: fit-content;
+            }
+            .logo1 {
+              z-index: 99999;
+            }
+
+          }
+          @media screen and (max-width: 800px) {
+            header {
+              height: 130px;
+            }
+            .logo1 img {
+              width: 140px;
+              margin-left: 170px;
+
+            }
+            .burger1 img {
+              margin-top: 20px;
+              width: 50px;
+              margin-right: 120px;
+            }
+            #menupunktermobil {
+              font-size: 1.8rem;
+              
+              position: absolute;
+              display: none;
+              height: 50vw;
+              right: 0;
+              width: 100vw;
+              margin-right: 47px;
+              top: 110px;
+              background-color: #aa0000ea;
+            }
+            #menupunktermobil ul {
+              margin-left: 10px;
+              margin-top: 20px;
+              list-style-type: none;
+              
+              
+            }
+            #menupunktermobil li {
+              margin: 30px;
+            }
+            #menupunktermobil a {
+              
+              text-decoration: none;
+              color: white;
+            }
+            .burger1:hover #menupunktermobil {
+              display: block;
+            }
+            .burger1:hover {
+              width: 100%;
+            }
+            .burger1 {
+              position: relative;
+              margin-left: auto;
+              width: fit-content;
+            }
+            .logo1 {
+              z-index: 99999;
+            }
+          }
+
+
+          @media screen and (max-width: 600px) {
+            header {
+              height: 160px;
+            }
+            .navbarmobil {
+              margin-left: 250px;
+            }
+            .logo1 img {
+              width: 150px;
+              margin-left: 200px;
+
+            }
+            .burger1 img {
+              margin-top: 40px;
+              width: 50px;
+              margin-right: 500px;
+            }
+
+            #menupunktermobil {
+              font-size: 1.8rem;
+              
+              position: absolute;
+              display: none;
+              height: 85vw;
+              margin-right: 370px;
+              right: 0;
+              width: 100vw;
+              top: 140px;
               background-color: #aa0000ea;
             }
             #menupunktermobil ul {
@@ -675,11 +892,14 @@ main {
             }
             .burger1 img {
               margin-top: 30px;
-              width: 30%;
+              margin-left: 60px;
+              width: 8%;
+              
             }
             .logo1 img {
-              width: 130px;
-              margin-left: 140px;
+              width: 120px;
+              margin-left: 3px;
+
           }
           #sælg h1 {
             font-size: 1.7rem;
@@ -729,18 +949,48 @@ main {
             z-index: 99999;
           }
         }
+        @media screen and (max-width: 415px){
+          .navbarmobil {
+            margin-left: 222px;
+          }
+          .burger1 img {
+            margin-left: 80px;
+          }
+          #menupunktermobil {
+            font-size: 1.8rem;
+            
+            position: absolute;
+            display: none;
+            height: 85vw;
+            right: 0;
+            margin-right: 420px;
+            width: 100vw;
+            top: 109px;
+            background-color: #aa0000ea;
+          }
+          
+        }
+      
           @media screen and (max-width: 390px) {
             header {
-              height: 105px;
+              height: 115px;
             }
-            .logo1 img {
+            .navbarmobil {
+              margin-left: 190px;
+            }
+
+          
+              .logo1 img {
               width: 110px;
-              margin-left: 110px;
-            }
+              margin-left: 0px;
+            } 
             .burger1 img {
              
               margin-top: 30px;
-            }
+            } 
+
+
+
             #sælg h1 {
               font-size: 1.7rem;
             }
@@ -753,10 +1003,11 @@ main {
               
               position: absolute;
               display: none;
-              height: 100vw;
+              height: 90vw;
+              margin-right: 420px;
               right: 0;
               width: 100vw;
-              top: 85px;
+              top: 95px;
               background-color: #aa0000ea;
             }
             #menupunktermobil ul {
@@ -789,6 +1040,23 @@ main {
               z-index: 99999;
             }
           }
+            @media screen and (max-width: 320px) {
+              .navbarmobil {
+                margin-left: 160px;
+              }
+              #menupunktermobil {
+                font-size: 1.5rem;
+                position: absolute;
+                display: none;
+                height: 100vw;
+                margin-right: 440px;
+                right: 0;
+                width: 100vw;
+                top: 95px;
+                background-color: #aa0000ea;
+              }
+            }
+          
 
 
 
