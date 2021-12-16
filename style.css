@@ -235,6 +235,7 @@ main {
         
         
         
+        
       }
       .tekst p {
         color: white;
@@ -510,7 +511,9 @@ main {
             header {
               height: 160px;
             }
-
+            .billed1 {
+              display: none;
+            }
             
 
             
@@ -1042,7 +1045,7 @@ main {
           }
             @media screen and (max-width: 320px) {
               .navbarmobil {
-                margin-left: 160px;
+                margin-left: 150px;
               }
               #menupunktermobil {
                 font-size: 1.5rem;
@@ -1054,6 +1057,9 @@ main {
                 width: 100vw;
                 top: 95px;
                 background-color: #aa0000ea;
+              }
+              .burger1 img {
+                margin-left: 25px;
               }
             }
           
