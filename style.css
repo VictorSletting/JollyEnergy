@@ -1,9 +1,11 @@
+/* min font  */
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* Bruger ikke så mange forskellige farver, men her er lidt af dem :)  */
 :root {
     --redj: #AA0000;
     --blå: rgb(13, 48, 148); 
@@ -18,10 +20,13 @@ body {
     
 
 }
+/* Nemt sjovt element der gør billedet glider meget mere smoth når man navigere 
+ved at klikke på menupunkterne, da jeg har en onepager */
 body, html {
   scroll-padding-top: 180px;
   scroll-behavior: smooth;
 }
+/* min header til web  */
 header {
   position:fixed;
   width: 100%;
@@ -53,7 +58,7 @@ header {
   max-width: 1000px;
 
 }
-
+/* menupunkterne med hover effekt  */
 .menupunkter{
   display: inline-block;
   margin: 0;
@@ -85,6 +90,7 @@ header {
 .navbar ul > * {
   
 }
+/* køb knap i header med hover effekt  */
 .køb  {
   
   display: flex;
@@ -116,7 +122,8 @@ header {
 
 
 
-
+/* her kommer stylingen af mit content  */
+ /* først hero billede, som har en linear gradient der gør billedet flyder godt sammen, alt dette er web lige nu. */
 main {
     width: 100%;
     height: 100%;
@@ -137,7 +144,7 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0)60%,white);
 }
 
-
+/* styling af sectionen konkurrence  */
 
 #konku img {
     width: 100vw;
@@ -145,6 +152,7 @@ main {
     padding: 0;
 
 }
+/* styling af mine overskrifter som er i fin boks, som skal minde lidt om jollycolas egen logo  */
 #overskrift {
     width: fit-content;
     margin: 0 auto;
@@ -163,6 +171,7 @@ main {
     outline: 3px solid black;
     border-radius: 3px;
 }
+/* styling af input tagget hvor du kan sætte dit telfonnummer ind  */
 #tlf {
     margin-top: 30px;
     position: relative;
@@ -198,6 +207,7 @@ main {
     border-radius: 7px;
     
 }
+/* overskrift styling gentager sig  */
 #jollyoverskrift {
     width: fit-content;
     margin: 0 auto;
@@ -218,7 +228,7 @@ main {
     outline: 3px solid black;
     border-radius: 3px;
     }
-    
+    /* min artikel som har rød baggrund */
       article {
         margin-left: 10vw;
         margin-right: 10vw;
@@ -245,6 +255,23 @@ main {
         
         
       }
+
+
+       /*  billeder der flyder i højre side af artiklen ved "om jolly" sectionen til web  */
+    .højre {
+      width: 50%;
+      margin-top: 20px;
+      margin-right: 5%;
+    }
+    .højre img {
+      width: 100%;
+      margin-left: 100px;
+      margin-bottom: 100px;
+      border-radius: 10px;
+      border: 2px solid black;
+      color: white;
+    }
+      /* næste section med andre produkter som har en knap hvor du kan "læse mere " */
       #læsmere  {
        position: relative;
        text-align: center;
@@ -276,31 +303,7 @@ main {
       }
 
 
-
-
-
-
-
-
-
-    .højre {
-        width: 50%;
-        margin-top: 20px;
-        margin-right: 5%;
-      }
-      .højre img {
-        width: 100%;
-        margin-left: 100px;
-        margin-bottom: 100px;
-        border-radius: 10px;
-        border: 2px solid black;
-        color: white;
-      }
-
-
-
-
-
+      /* overskriften gentager sig her igen ved sectionen "produkter" */
       #produkter {
         width: fit-content;
         margin: 0 auto;
@@ -321,6 +324,7 @@ main {
         outline: 3px solid black;
         border-radius: 3px;
         }
+        /* min sidste section hvor man kan se hvor man købe jolly i butik  */
         #sælg {
           display: flex;
           justify-content: center;
@@ -345,13 +349,8 @@ main {
          justify-content: space-around;
          flex-direction: row;
          flex-wrap: wrap;
-         
          margin: 60px;
-         
-         
-        
-         
-         
+           
        }
        #sælg1 img {
          margin: 45px;
@@ -404,10 +403,10 @@ main {
         
         
 
-
+        /* Her kommmer min media, hvor alt content bliver stylet til mobil */
 
         @media screen and (max-width: 975px) {
-          
+          /* her fjerner jeg header elementer ved web og sætter min navbarmobil ind  */
           .køb {
             display: none;
           }
@@ -428,7 +427,7 @@ main {
           margin-left: 200px;
         } 
        
-        
+        /* min burger menu, lavet med hover effekt  */
         .burger1 {
           position: absolute;
           margin-left: 100px;
@@ -492,6 +491,7 @@ main {
            
            
           @media screen and (min-width: 750px) {
+            /* er fjerner jeg elementer som kun skal være til mobil fra web */
             .navbarmobil img {
               width: 60%;
             }
@@ -522,10 +522,11 @@ main {
           
          
           @media screen and (max-width: 749px) {
+            /* Her skifter størrelsen meget i breden, så her bliver der sat meget nyt content ind til mobil  */
             .navbar {
               display: none;
             }
-            
+            /* styling af navbarmobil  */
             .navbarmobil {
               display: flex;
               justify-content: center;
@@ -546,6 +547,7 @@ main {
             .køb {
               display: none;
             }
+            /* Nyt hero billede til mobil her */
             #hero img {
               display: none;
             }
@@ -575,11 +577,13 @@ main {
            #konk {
              display: none;
            }
+           /* nyt billede til konkurrence på mobil  */
            #konku1 {
              width: 100%;
              margin: 0;
              padding: 0;
            }
+           /* alt content til mobil bliver ændrtet i størrelse nu  */
            #overskrift h1 {
              font-size: 2.5rem;
            }
@@ -626,6 +630,7 @@ main {
            #læsmere img {
              height: 230px;
            }
+           /************* footer her *************/
            footer {
              display: flex;
              flex-direction: column;
@@ -661,6 +666,7 @@ main {
             width: 220px;
 
            }
+           /* styling til dropdown mobil, hover burgermenu  */
            #menupunktermobil {
             font-size: 1.8rem;
             
@@ -703,6 +709,7 @@ main {
           }
           }
           @media screen and (max-width: 850px) {
+           /*  her ændres størrelsen  */
             .navbarmobil {
               display: flex;
               justify-content: center;
@@ -771,6 +778,7 @@ main {
 
           }
           @media screen and (max-width: 800px) {
+             /*  her ændres størrelsen  */
             header {
               height: 130px;
             }
@@ -829,6 +837,7 @@ main {
 
 
           @media screen and (max-width: 600px) {
+             /*  her ændres størrelsen  */
             header {
               height: 160px;
             }
@@ -890,6 +899,7 @@ main {
             
           }
           @media screen and (max-width: 480px) {
+             /*  her ændres størrelsen  */
             header {
               height: 130px;
             }
@@ -953,6 +963,7 @@ main {
           }
         }
         @media screen and (max-width: 415px){
+           /*  her ændres størrelsen  */
           .navbarmobil {
             margin-left: 222px;
           }
@@ -975,6 +986,7 @@ main {
         }
       
           @media screen and (max-width: 390px) {
+             /*  her ændres størrelsen  */
             header {
               height: 115px;
             }
@@ -1044,6 +1056,7 @@ main {
             }
           }
             @media screen and (max-width: 320px) {
+               /*  her ændres størrelsen  */
               .navbarmobil {
                 margin-left: 150px;
               }
